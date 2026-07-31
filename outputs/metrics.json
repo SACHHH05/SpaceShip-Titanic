@@ -1,0 +1,25 @@
+{
+  "random_seed": 42,
+  "final_feature_count": 31,
+  "feature_engineering_summary": "Cabin split into Cabin_Deck/Cabin_Number/Cabin_Side; PassengerId group prefixes produced Group_Size and Is_Alone; the five amenity spend columns were summed into Total_Spend with a derived Zero_Spend flag; remaining categoricals were one-hot encoded.",
+  "cv_n_splits": 5,
+  "cv_fold_accuracies": [
+    0.806614,
+    0.812365,
+    0.808052,
+    0.802301,
+    0.806475
+  ],
+  "cv_accuracy_mean": 0.807161,
+  "cv_accuracy_std": 0.003233,
+  "holdout_accuracy": 0.813686,
+  "holdout_precision": 0.813636,
+  "holdout_recall": 0.817352,
+  "holdout_f1": 0.81549,
+  "holdout_roc_auc": 0.91338,
+  "holdout_log_loss": 0.364738,
+  "training_time_seconds": 4.226,
+  "model": "XGBClassifier (n_estimators=400, max_depth=5, lr=0.03)",
+  "train_rows": 6954,
+  "holdout_rows": 1739
+}
